@@ -45,7 +45,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -153,5 +153,10 @@
       }
     }
   },
-  "defaultProject": "ngcoop"
+  "defaultProject": "ngcoop",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

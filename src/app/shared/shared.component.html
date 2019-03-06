@@ -1,0 +1,33 @@
+<!--
+
+  FEI Summer 2019 Coop Assignment
+  
+  TODO:
+    Change references to 'u.userName' below to 'u.userName | async'
+    after string is wrapped in BehaviorSubject
+
+-->
+
+<span [ngSwitch]="navtype">
+  <section *ngSwitchCase="'top'" class="section FE-top">
+    <div class="container">
+      <h1 class="title">Summer 2019 Coop<i> NG</i> Checkout</h1>
+      <h2 *ngIf="u.userName" class="subtitle">
+        <strong>{{u.userName}}</strong> Received from service
+      </h2>
+    </div>
+  </section>
+
+  <footer *ngSwitchCase="'foot'" class="footer">
+    <div class="container">
+      <div class="content">
+        <p>
+          &copy;
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <p *ngSwitchDefault>DEFAULT</p>
+
+</span>
